@@ -1,0 +1,24 @@
+cabal-version:       >=1.10
+-- For further documentation, see http://haskell.org/cabal/users-guide/
+name:                hproc
+version:             1.0.0.1
+synopsis: Get info from the file /proc/stat
+description: Make calculation on usage percentages
+-- bug-reports:
+-- license:
+-- license-file:        LICENSE
+author:              Jean-Pierre DELOUCHE
+maintainer:
+-- copyright:
+-- category:
+build-type:          Simple
+extra-source-files:  CHANGELOG.md
+
+executable hproc
+  main-is:             Main.hs
+  other-modules:       Hproc.Hproc,
+                       Data.Amp.Hylo
+  -- other-extensions:
+  build-depends:       base >=4.0
+  hs-source-dirs:      src
+  default-language:    Haskell2010
